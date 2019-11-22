@@ -4,59 +4,96 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm</title>
+    <title>Midterm ET-710</title>
 
-  <!-- *Begin AngularJS -->
-      <script src="js/vendor/angular-1.7.8/angular.min.js"></script>
-      <script src="js/vendor/angular-1.7.8/angular-animate.min.js"></script>
-      <script src="js/vendor/angular-1.7.8/angular-route.min.js"></script>
-  <!-- *End AngularJS -->
+    <!-- *Begin AngularJS -->
+        <script src="js/vendor/angular-1.7.8/angular.min.js"></script>
+        <script src="js/vendor/angular-1.7.8/angular-animate.min.js"></script>
+        <script src="js/vendor/angular-1.7.8/angular-route.min.js"></script>
+    <!-- *End AngularJS -->
 
-  <!-- *Begin Datatables.net -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.css"/>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.js"></script>
-  <!-- *End Datatables.net -->
+    <!-- *Begin Datatables.net -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.css"/>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.js"></script>
+    <!-- *End Datatables.net -->
 
+    <!-- *Begin Font Awesome
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    -->
+    <!-- The font Awesome code below is several revisions back.
+          https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+          I discovered that it would work from an article on stack overflow. all code should at some point be updated to reflect the last calling syntax for font awesome
+          -->
+          <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <!-- *End Font Awesome -->
 
-  <!-- *Begin Font Awesome -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-   -->
-   <!-- The font Awesome code below is several revisions back.
-         https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
-         I discovered that it would work from an article on stack overflow. all code should at some point be updated to reflect the last calling syntax for font awesome
-         -->
-         <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-  <!-- *End Font Awesome -->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
 
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/app.css">
-
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/content.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/subnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
 
   </head>
   <body>
 
-  <!-- Begin Nav -->
-  <!-- End Nav -->
-
-  <!-- Begin Header -->
-  <!-- End Header -->
-
-  <!-- *Begin Content -->
-  <!-- Begin AngularJS -->
-  <div>
-    <label>Name:</label>
-    <input type="text" ng-model="yourName" placeholder="Enter a name here">
-    <hr>
-    <h1>Hello {{yourName}}!</h1>
+    <!-- *Begin Nav-->
+    <div data-sticky-container>
+<div class="sticky" data-sticky data-margin-top="0">
+    <nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+    <a class="topbar-responsive-logo" href="#"><strong>Midterm ET-710</strong></a>
   </div>
-     <!-- End AngularJS -->
-  <!-- *End Content -->
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <li><a href="#">Home</a></li>
+        <li><a href="about/index.html">About</a></li>
+        <li><a href="services/index.html">Services</a></li>
+        <li><a href="index.html#!/works">Works</a></li>
+        <li><a href="index.html#!/news">News</a></li>
+        <li><a href="index.html#!/contact">Contact</a></li>
+        <li>
+          <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+    <!-- *End Nav -->
 
-  <!-- *Begin Footer -->
+
+    <!-- *Begin SubNav -->
+    <!-- *End SubNav -->
+
+
+    <!-- *Begin Header -->
+    <!-- *End Header -->
+
+
+
+    <!-- *Begin Content -->
+    <div ng-view></div>
+    <!-- *Begin AngularJS -->
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+    <!-- *End AngularJS -->
+    <!-- *End Content -->
+
+
+
+    <!-- *Begin Footer -->
         <footer class="marketing-site-footer">
         <div class="grid-x grid-padding-x">
             <div class="medium-4 cell">
@@ -129,10 +166,12 @@
         </footer>
       <!-- *End Footer -->
 
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+
     <script src="js/spa.js"></script>
 
   </body>
