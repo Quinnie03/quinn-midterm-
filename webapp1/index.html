@@ -1,0 +1,1243 @@
+
+<!doctype html>
+<html ng-app=spaApp class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Solution ET-710</title>
+
+    <!-- *Begin AngularJS -->
+        <script src="js/vendor/angular-1.7.9/angular.min.js"></script>
+        <script src="js/vendor/angular-1.7.9/angular-animate.min.js"></script>
+        <script src="js/vendor/angular-1.7.9/angular-route.min.js"></script>
+    <!-- *End AngularJS -->
+
+    <!-- *Begin Datatables.net -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.css"/>
+    <!-- *End Datatables.net -->
+
+    <!-- *Begin Font Awesome
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    -->
+    <!-- The font Awesome code below is several revisions back.
+          https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+          I discovered that it would work from an article on stack overflow. all code should at some point be updated to reflect the last calling syntax for font awesome
+          -->
+          <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <!-- *End Font Awesome -->
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/subnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+  </head>
+  <body>
+
+    <!-- *Begin Nav-->
+    <div data-sticky-container>
+<div class="sticky" data-sticky data-margin-top="0">
+    <nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+    <a class="topbar-responsive-logo" href="#"><strong>Midterm Solution ET-710</strong></a>
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-right">
+      <ul class="menu simple vertical medium-horizontal">
+        <li><a href="#">Home</a></li>
+        <li><a href="index.html#!/about">About</a></li>
+        <li><a href="index.html#!/services">Services</a></li>
+        <li><a href="index.html#!/works">Works</a></li>
+        <li><a href="index.html#!/news">News</a></li>
+        <li><a href="index.html#!/contact">Contact</a></li>
+        <li><a href="index.html#!/videos">Videos</a></li>
+        <li>
+          <a href="categories/index.html">
+            <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+    <!-- *End Nav -->
+
+
+    <!-- *Begin SubNav -->
+    <!-- *End SubNav -->
+
+
+    <!-- *Begin Header -->
+    <!-- *End Header -->
+
+
+
+    <!-- *Begin Content -->
+    <div ng-view></div>
+    <!-- *Begin AngularJS -->
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+    <!-- *End AngularJS -->
+    <!-- *DataTable Example-->
+
+    <div>
+    <table  <table id="example" class="display" cellspacing="0" width="100%"
+    summary="Electrical and Computer Engineering Technology final exams listing">
+
+
+    <thead>
+    <tr>
+    <th>Subject</th>
+    <th>CRS#</th>
+    <th>Sect</th>
+    <th>Class#</th>
+    <th>Exam Day/Date</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+    <th>Exam Room</th>
+    <th>Instructor Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>ET</td>
+    <td>110</td>
+    <td>B13B</td>
+    <td>35132</td>
+    <td>Wed, 12/18/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>S-223</td>
+    <td>Buoncora</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>110</td>
+    <td>C13</td>
+    <td>42557</td>
+    <td>Wed, 12/18/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>S-223</td>
+    <td>Metaxas</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>110</td>
+    <td>F24</td>
+    <td>35133</td>
+    <td>Tue, 12/17/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>S-224</td>
+    <td>Ragoub</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>110</td>
+    <td>F24B</td>
+    <td>65652</td>
+    <td>Tue, 12/17/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>S-223</td>
+    <td>Asser</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>110</td>
+    <td>G24</td>
+    <td>35134</td>
+    <td>Thu, 12/19/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>S-224</td>
+    <td>Wu</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>210</td>
+    <td>C24</td>
+    <td>35177</td>
+    <td>Tue, 12/17/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>S-223</td>
+    <td>Buoncora</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>210</td>
+    <td>M2</td>
+    <td>35179</td>
+    <td>Tue, 12/17/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T21</td>
+    <td>Leccese</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>220</td>
+    <td>J1</td>
+    <td>35194</td>
+    <td>Mon, 12/16/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T03B</td>
+    <td>Gayle</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>230</td>
+    <td>J2</td>
+    <td>36076</td>
+    <td>Tue, 12/17/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T21</td>
+    <td>Haro</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>232</td>
+    <td>F2A</td>
+    <td>56035</td>
+    <td>Tue, 12/17/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T14</td>
+    <td>Drini Prelvukaj</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>320</td>
+    <td>B1</td>
+    <td>37119</td>
+    <td>Mon, 12/16/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>T-T13</td>
+    <td>Namdar</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>350</td>
+    <td>B1</td>
+    <td>35197</td>
+    <td>Mon, 12/16/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>T-T13</td>
+    <td>Namdar</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>410</td>
+    <td>C2</td>
+    <td>35915</td>
+    <td>Tue, 12/17/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>S-116</td>
+    <td>Metaxas</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>420</td>
+    <td>C2</td>
+    <td>60904</td>
+    <td>Tue, 12/17/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>S-116</td>
+    <td>Metaxas</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>420</td>
+    <td>M1</td>
+    <td>35200</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T18</td>
+    <td>Leccese</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>502</td>
+    <td>F5</td>
+    <td>35204</td>
+    <td>Fri, 12/20/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T19</td>
+    <td>Sun</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>504</td>
+    <td>C5</td>
+    <td>35207</td>
+    <td>Fri, 12/20/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T14</td>
+    <td>Sitbon</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>504</td>
+    <td>F5</td>
+    <td>50619</td>
+    <td>Fri, 12/20/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T24</td>
+    <td>Mangra</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>504</td>
+    <td>H2</td>
+    <td>35208</td>
+    <td>Tue, 12/17/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T14</td>
+    <td>Victolo</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>504</td>
+    <td>M1</td>
+    <td>35209</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T14</td>
+    <td>Ducroiset</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>509</td>
+    <td>C5</td>
+    <td>35272</td>
+    <td>Fri, 12/20/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T18</td>
+    <td>Clark</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>509</td>
+    <td>J3</td>
+    <td>35270</td>
+    <td>Wed, 12/18/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T18</td>
+    <td>Yuster</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>509</td>
+    <td>M3</td>
+    <td>35876</td>
+    <td>Wed, 12/18/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T22</td>
+    <td>Novak</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>540</td>
+    <td>B13</td>
+    <td>36078</td>
+    <td>Wed, 12/18/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>S-224</td>
+    <td>Ragoub</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>540</td>
+    <td>C13</td>
+    <td>35290</td>
+    <td>Wed, 12/18/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>S-224</td>
+    <td>Wu</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>540</td>
+    <td>D24</td>
+    <td>35291</td>
+    <td>Thu, 12/19/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>S-224</td>
+    <td>Seo</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>540</td>
+    <td>G24</td>
+    <td>35292</td>
+    <td>Thu, 12/19/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>S-223</td>
+    <td>Asser</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>540</td>
+    <td>H13B</td>
+    <td>50643</td>
+    <td>Wed, 12/18/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>S-224</td>
+    <td>Ragoub</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>540</td>
+    <td>M1</td>
+    <td>35293</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T21</td>
+    <td>Zephyrine</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>542</td>
+    <td>J4</td>
+    <td>35299</td>
+    <td>Thu, 12/19/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T22</td>
+    <td>Gayle</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>560</td>
+    <td>F24</td>
+    <td>35300</td>
+    <td>Thu, 12/19/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T22</td>
+    <td>Birchfield</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>560</td>
+    <td>M2</td>
+    <td>35301</td>
+    <td>Tue, 12/17/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T22</td>
+    <td>Novak</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>C2</td>
+    <td>36427</td>
+    <td>Tue, 12/17/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>S-119</td>
+    <td>Kueper</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>C6</td>
+    <td>37158</td>
+    <td>Sat, 12/14/2019</td>
+    <td>9:30AM</td>
+    <td>11:30AM</td>
+    <td>S-118</td>
+    <td>Crinnion</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>C6B</td>
+    <td>36407</td>
+    <td>Sat, 12/14/2019</td>
+    <td>9:30AM</td>
+    <td>11:30AM</td>
+    <td>S-116</td>
+    <td>Nanda</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>E1</td>
+    <td>35918</td>
+    <td>Mon, 12/16/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T19</td>
+    <td>Ellis</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>E1B</td>
+    <td>37704</td>
+    <td>Mon, 12/16/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T24</td>
+    <td>Lambert</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>F5</td>
+    <td>42745</td>
+    <td>Fri, 12/20/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T22</td>
+    <td>Lawrence</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>F5B</td>
+    <td>65981</td>
+    <td>Fri, 12/20/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>S-118</td>
+    <td>Ellis</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>H3</td>
+    <td>50645</td>
+    <td>Wed, 12/18/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>S-116</td>
+    <td>Mangra</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>H3B</td>
+    <td>42749</td>
+    <td>Wed, 12/18/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>S-118</td>
+    <td>Kueper</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>J1</td>
+    <td>37159</td>
+    <td>Mon, 12/16/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T02</td>
+    <td>Ellis</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>J1B</td>
+    <td>65390</td>
+    <td>Mon, 12/16/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>S-118</td>
+    <td>Lambert</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>M1</td>
+    <td>37161</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T24</td>
+    <td>Banho</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>570</td>
+    <td>M2</td>
+    <td>36451</td>
+    <td>Tue, 12/17/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T02</td>
+    <td>Nanda</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>574</td>
+    <td>K1</td>
+    <td>51335</td>
+    <td>Mon, 12/16/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>S-116</td>
+    <td>An</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>BT1</td>
+    <td>37162</td>
+    <td>Wed, 12/18/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T19</td>
+    <td>Sun</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>D2</td>
+    <td>37523</td>
+    <td>Tue, 12/17/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>S-118</td>
+    <td>An</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>F2</td>
+    <td>35623</td>
+    <td>Tue, 12/17/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>S-116</td>
+    <td>Trowbridge</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>J3</td>
+    <td>37302</td>
+    <td>Wed, 12/18/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T02</td>
+    <td>Sun</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>K1</td>
+    <td>35621</td>
+    <td>Mon, 12/16/2019</td>
+    <td>4:45PM</td>
+    <td>6:45PM</td>
+    <td>T-T22</td>
+    <td>Metaxas</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>K2</td>
+    <td>37168</td>
+    <td>Tue, 12/17/2019</td>
+    <td>4:45PM</td>
+    <td>6:45PM</td>
+    <td>T-T03B</td>
+    <td>Metaxas</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>K2B</td>
+    <td>50674</td>
+    <td>Tue, 12/17/2019</td>
+    <td>4:45PM</td>
+    <td>6:45PM</td>
+    <td>T-T03A</td>
+    <td>Trowbridge</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>M1</td>
+    <td>37293</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T03B</td>
+    <td>Crinnion</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>M1B</td>
+    <td>37297</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>S-119</td>
+    <td>Salayka</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>575</td>
+    <td>M1C</td>
+    <td>67142</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>S-119</td>
+    <td>Salayka</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>580</td>
+    <td>D1A</td>
+    <td>56018</td>
+    <td>Mon, 12/16/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T18</td>
+    <td>Trowbridge</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>580</td>
+    <td>M1A</td>
+    <td>56022</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>S-118</td>
+    <td>An</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>585</td>
+    <td>C2</td>
+    <td>37471</td>
+    <td>Tue, 12/17/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T03A</td>
+    <td>Gayle</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>585</td>
+    <td>M4</td>
+    <td>36085</td>
+    <td>Thu, 12/19/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T03A</td>
+    <td>Clark</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>704</td>
+    <td>B1</td>
+    <td>35309</td>
+    <td>Mon, 12/16/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>T-T24</td>
+    <td>Drini Prelvukaj</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>704</td>
+    <td>BT1</td>
+    <td>36086</td>
+    <td>Tue, 12/17/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>T-T24</td>
+    <td>Drini Prelvukaj</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>704</td>
+    <td>C1</td>
+    <td>35311</td>
+    <td>Mon, 12/16/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>T-T14</td>
+    <td>Gayle</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>704</td>
+    <td>C2</td>
+    <td>35312</td>
+    <td>Tue, 12/17/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T14</td>
+    <td>Mangra</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>704</td>
+    <td>E2</td>
+    <td>37451</td>
+    <td>Tue, 12/17/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T24</td>
+    <td>Szabo</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>704</td>
+    <td>H1</td>
+    <td>36425</td>
+    <td>Mon, 12/16/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T24</td>
+    <td>Long</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>704</td>
+    <td>J1</td>
+    <td>42804</td>
+    <td>Mon, 12/16/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T14</td>
+    <td>Kim</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>705</td>
+    <td>M2</td>
+    <td>35317</td>
+    <td>Tue, 12/17/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T14</td>
+    <td>Toyota</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>BT1</td>
+    <td>35322</td>
+    <td>Wed, 12/18/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>S-118</td>
+    <td>Nystrom</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>BT2</td>
+    <td>35319</td>
+    <td>Wed, 12/18/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>T-T22</td>
+    <td>Lawrence</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>D3</td>
+    <td>66195</td>
+    <td>Wed, 12/18/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T22</td>
+    <td>Lawrence</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>F2</td>
+    <td>35330</td>
+    <td>Tue, 12/17/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T19</td>
+    <td>Mangra</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>H1B</td>
+    <td>35323</td>
+    <td>Mon, 12/16/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T19</td>
+    <td>Lachter</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>H2</td>
+    <td>35321</td>
+    <td>Tue, 12/17/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>S-118</td>
+    <td>Lawrence</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>K2</td>
+    <td>64436</td>
+    <td>Tue, 12/17/2019</td>
+    <td>4:45PM</td>
+    <td>6:45PM</td>
+    <td>T-T24</td>
+    <td>Wu</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>M2</td>
+    <td>36452</td>
+    <td>Tue, 12/17/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T13</td>
+    <td>Xiao</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>M3</td>
+    <td>46275</td>
+    <td>Wed, 12/18/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T24</td>
+    <td>Lachter</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>710</td>
+    <td>M4</td>
+    <td>35325</td>
+    <td>Thu, 12/19/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>S-118</td>
+    <td>Banho</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>712</td>
+    <td>BT1</td>
+    <td>37551</td>
+    <td>Tue, 12/17/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>S-119</td>
+    <td>Kueper</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>712</td>
+    <td>D2</td>
+    <td>35332</td>
+    <td>Tue, 12/17/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T19</td>
+    <td>Trowbridge</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>712</td>
+    <td>H2</td>
+    <td>46463</td>
+    <td>Tue, 12/17/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T19</td>
+    <td>Tubilleja</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>712</td>
+    <td>M1</td>
+    <td>35934</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T03A</td>
+    <td>Tubilleja</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>712</td>
+    <td>M2</td>
+    <td>46466</td>
+    <td>Tue, 12/17/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T19</td>
+    <td>Ramirez</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>714</td>
+    <td>C1</td>
+    <td>46468</td>
+    <td>Mon, 12/16/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>T-T03A</td>
+    <td>Kueper</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>716</td>
+    <td>BT1</td>
+    <td>35334</td>
+    <td>Tue, 12/17/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T03A</td>
+    <td>Sun</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>720</td>
+    <td>BT2</td>
+    <td>37195</td>
+    <td>Fri, 12/20/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T02</td>
+    <td>Nystrom</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>725</td>
+    <td>F1</td>
+    <td>36089</td>
+    <td>Mon, 12/16/2019</td>
+    <td>12:15PM</td>
+    <td>2:15PM</td>
+    <td>T-T14</td>
+    <td>Drini Prelvukaj</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>725</td>
+    <td>J4</td>
+    <td>37196</td>
+    <td>Thu, 12/19/2019</td>
+    <td>2:30PM</td>
+    <td>4:30PM</td>
+    <td>T-T14</td>
+    <td>Szabo</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>725</td>
+    <td>M2</td>
+    <td>63875</td>
+    <td>Tue, 12/17/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>S-119</td>
+    <td>Stair</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>725</td>
+    <td>M3</td>
+    <td>37197</td>
+    <td>Wed, 12/18/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T14</td>
+    <td>Stair</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>821</td>
+    <td>C4</td>
+    <td>36381</td>
+    <td>Thu, 12/19/2019</td>
+    <td>10:00AM</td>
+    <td>12:00PM</td>
+    <td>T-T03A</td>
+    <td>Mardani</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>841</td>
+    <td>PNT1</td>
+    <td>35336</td>
+    <td>Mon, 12/16/2019</td>
+    <td>6:10PM</td>
+    <td>8:10PM</td>
+    <td>T-T13</td>
+    <td>Stroumbakis</td>
+    </tr>
+    <tr>
+    <td>ET</td>
+    <td>841</td>
+    <td>PNT2</td>
+    <td>35337</td>
+    <td>Tue, 12/17/2019</td>
+    <td>7:45AM</td>
+    <td>9:45AM</td>
+    <td>S-224</td>
+    <td>Davis</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+
+
+
+    </div>
+        <!-- End DataTable Example-->
+
+
+    <!-- *End Content -->
+
+
+
+    <!-- *Begin Footer -->
+        <footer class="marketing-site-footer">
+        <div class="grid-x grid-padding-x">
+            <div class="medium-4 cell">
+              <h4 class="marketing-site-footer-name">ET-710</h4>
+              <p>Building and maintaining websites.</p>
+              <ul class="menu marketing-site-footer-menu-social simple">
+                <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                 <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                 <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="medium-4 cell">
+               <h4 class="marketing-site-footer-title">Contact Info</h4>
+              <div class="marketing-site-footer-block">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>Queensborough Community College<br>Bayside, NY 11364</p>
+              </div>
+              <div class="marketing-site-footer-block">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>718.631.6262</p>
+              </div>
+              <div class="marketing-site-footer-block">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <p>mlawrence@qcc.cuny.edu</p>
+              </div>
+            </div>
+            <div class="large-4 cell">
+              <h4 class="marketing-site-footer-title">Photos</h4>
+                <div class="grid-x grid-padding-y">
+    	    	<div class="large-4 medium-6 small-12 cell">
+                  <img src="https://placehold.it/75" alt="" />
+                </div>
+    	    	<div class="large-4 medium-6 small-12 cell">
+                  <img src="https://placehold.it/75" alt="" />
+                </div>
+    	    	<div class="large-4 medium-6 small-12 cell">
+                  <img src="https://placehold.it/75" alt="" />
+                </div>
+    	    	<div class="large-4 medium-6 small-12 cell">
+                  <img src="https://placehold.it/75" alt="" />
+                </div>
+    	    	<div class="large-4 medium-6 small-12 cell">
+                  <img src="https://placehold.it/75" alt="" />
+                </div>
+    	    	<div class="large-4 medium-6 small-12 cell">
+                  <img src="https://placehold.it/75" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="marketing-site-footer-bottom">
+            <div class="row large-unstack align-middle">
+              <div class="column">
+                <p>&copy; MDLawrence - 2017 All rights reserved</p>
+              </div>
+              <div class="column">
+                <ul class="menu marketing-site-footer-bottom-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="index.html#!/about">About</a></li>
+                  <li><a href="index.html#!/services">Services</a></li>
+                  <li><a href="index.html#!/works">Works</a></li>
+                  <li><a href="index.html#!/news">News</a></li>
+                  <li><a href="index.html#!/contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      <!-- *End Footer -->
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/spa.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+    </script>
+
+  </body>
+</html>
